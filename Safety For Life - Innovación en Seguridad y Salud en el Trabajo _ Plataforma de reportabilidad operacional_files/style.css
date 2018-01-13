@@ -1,0 +1,990 @@
+
+@font-face {
+  font-family: 'Gotham-Black';
+  src: url('fonts/Gotham-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('fonts/Gotham-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('fonts/Gotham-Book.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('fonts/Gotham-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gotham-LightItalic';
+  src: url('fonts/Gotham-LightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gotham-Thin';
+  src: url('fonts/Gotham-Thin.woff') format('woff');
+}
+
+
+html, body{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	font-family: 'Gotham-Book';
+	/*overflow-x: hidden;*/
+}
+
+.anim { -webkit-transition: all 0.2s ease-in-out 0s; transition: all 0.2s ease-in-out 0s; }
+.am { color: #e6b63f; }
+
+.navbar-brand{
+	padding: 0;
+	margin-top: 15px;
+}
+.navbar-brand img{
+	height: 60px;
+	width: auto;
+}
+.navbar{
+	min-height: 90px;
+}
+.navbar-nav>li>a{
+	padding-top: 35px;
+	padding-bottom: 35px;
+	font-family: 'Gotham-Book', arial, sans-serif;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active:hover>a, .navbar-default .navbar-nav> li:hover>a, .menu-menu-header-container .current-menu-item a{
+	background-color: transparent;
+	font-family: 'Gotham-Bold', arial, sans-serif;
+	color: #6dad3a !important;
+}
+
+.navbar-default .navbar-nav>.AClientes>a{
+	color: #fff;
+	border-radius: 2px;
+	padding: 6px 15px;
+	margin-top: 28px;
+	background-color: #bebebe;
+	font-size: 12px;
+	height: 30px;
+	margin-left: 20px;
+}
+.navbar-default .navbar-nav>.AClientes:hover>a{
+	color: #fff !important;
+	background-color: #6dad3a !important;
+}
+.nav>li>a{
+	padding-left: 17px;
+	padding-right: 17px;
+	 -webkit-transition: all 0.2s ease-in-out 0s; transition: all 0.2s ease-in-out 0s;
+}
+
+.sectionHome{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+.sectionHome .frase{
+	position: absolute;
+	top: 50%;
+	left: 90%;
+	text-align: center;
+  	transform: translate(-90%,-50%);
+}
+.sectionHome h1 strong.black{
+	font-size: 36px;
+	font-family: 'Gotham-Black', arial, sans-serif;;
+	font-weight: normal;
+	font-style: normal;
+}
+.sectionHome h1 strong{
+	font-size: 56px;
+	font-family: 'Gotham-Bold', arial, sans-serif;;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1em;
+}
+.sectionHome h1{
+	font-size: 34px;
+	font-family: 'Gotham-Light', arial, sans-serif;
+	color: #fff;
+	line-height: 1em;
+}
+.sectionHome a{
+	display: block;
+	color: #fff;
+	margin-top: 30px;
+	font-size: 18px;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	padding: 7px 50px;
+	font-family: 'Gotham-Book', arial, sans-serif;
+	text-decoration: none;
+	float: left;
+}
+
+
+/*-----------------------------------------------	 Section Home APP	 -----------------------------------------------*/
+.sectionHome.app{
+	background: #5a9030;
+}
+.sectionHome.app h1 strong, .sectionHome.app h1{
+	text-align: left;
+}
+.sectionHome.app .imagen{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.sectionHome.app img{
+	width: 65%;
+	height: auto;
+	text-align: center;
+	display: block;
+	float: none;
+	margin: 0 auto;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+  	transform: translate(-50%,-65%);
+}
+
+#bajar{
+	height: 45px;
+	width: 45px;
+	background-image: url('img/bajar.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: none;
+	position: absolute;
+	clear: both;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 40px;
+}
+
+
+/*-----------------------------------------------	 Section Home VR	 -----------------------------------------------*/
+.sectionHome.vr{
+	background: #ebb943 url('img/home/vr.png') no-repeat bottom right;
+	background-size: 40%;
+}
+.sectionHome.vr h1{
+	font-size: 34px;
+}
+.sectionHome.vr h1 strong{
+	font-size: 46px;
+}
+.sectionHome.vr h1 strong.black{
+	font-size: 70px;
+}
+.sectionHome.vr h1 strong, .sectionHome.vr h1{
+	text-align: right;
+}
+.sectionHome.vr .frase{
+	right: inherit;
+	left: 5%;
+  	top: 50%;
+  	transform: translate(5%,-50%);
+}
+.sectionHome.vr a{
+	float: right;
+	margin-top: 20px;
+}
+
+
+/*-----------------------------------------------	 Section Home COACH	 -----------------------------------------------*/
+
+.sectionHome.coach{
+	background: #de8143 url('img/home/coach.png') no-repeat bottom left;
+	background-size: 40%;
+}
+.sectionHome.coach h1 strong, .sectionHome.coach h1{
+	text-align: left;
+}
+.sectionHome.coach .frase{
+	top: 50%;
+	left: 70%;
+  	transform: translate(-70%,-50%);
+}
+.sectionHome.coach a{
+	float: left;
+	margin-top: 20px;
+}
+
+
+/*-----------------------------------------------	 Section Home UNIVERSITY	 -----------------------------------------------*/
+
+.sectionHome.uni{
+	background: #314989 url('img/home/uni.jpg') no-repeat right center;
+	background-size: 40%;
+
+}
+.sectionHome.uni h1 strong, .sectionHome.uni h1{
+	text-align: right;
+}
+.sectionHome.uni .frase{
+	top: 50%;
+	left: 10%;
+  	transform: translate(-10%,-50%);
+}
+.sectionHome.uni a{
+	float: right;
+	margin-top: 50px;
+}
+
+/*PRODUCTOS*/
+
+/*NAVEGACION PRODUCTOS*/
+
+.nav.nav-pills{
+	margin-top: 40px;
+	font-family: 'Gotham-Light';
+	/*position: absolute;*/
+	z-index: 9999;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	background-color: transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover, .menu-menu-productos-container .current-menu-item a{
+	background-color: transparent;
+	color: #fff;
+}
+.nav-pills li a{
+	color: rgba(255,255,255,0.4);
+	border-radius: 0;
+	display: inline-block;
+}
+.nav-pills li a{
+	background: no-repeat left;
+	background-size: contain;
+	padding-left: 15px;
+	 -webkit-transition: all 0.2s ease-in-out 0s; transition: all 0.2s ease-in-out 0s;
+}
+.nav-pills li.sa a{
+	padding-left: 45px;
+	background-image: url('img/ico-sa.svg');
+}
+
+
+.nav-pills li.vr a{	background-image: url('img/ico-vr.svg'); padding-left: 55px; background-size: 45px; }
+.nav-pills li.su a{	background-image: url('img/ico-su.png'); padding-left: 45px }
+.nav-pills li.sc a{	background-image: url('img/ico-sc.png'); padding-left: 35px }
+
+
+/*ESTILOS GENERALES DE PRODUCTOS*/
+section header{
+	text-align: left;
+	height: auto;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 90px;
+	padding-bottom: 80px;
+}
+section header div:first-of-type{
+	padding-right: 90px;
+}
+section header.app{ background-color: #6dad3a; }
+section header.vr{ background-color: #e6b63f; }
+section header.su{	background-color: #eb943f; }
+section header.sc{	background-color: #373478; }
+section header h1, section header h2, section header p{
+	color: #fff;
+}
+section header h1{
+	font-family: 'Gotham-Light';
+	margin: 100px 0 15px 0;
+}
+section header h1 strong{
+	font-family: 'Gotham-Black';
+}
+section header h2{
+	font-family: 'Gotham-Black';
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+section header p{
+	font-size: 16px;
+	font-family: 'Gotham-LightItalic';
+}
+
+section p{
+	font-size: 16px;
+	font-family: 'Gotham-LightItalic';
+}
+
+/*Productos APP*/
+section header.app, section header.vr, section header.su, section header.sc{
+	position: relative;
+	height: 650px;
+}
+section header.app .imgMano, section header .imgHeader{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+    background: url('img/celuApp.png') no-repeat bottom right;
+    background-size: 80%;
+}
+section header.vr .imgHeader{
+	background-image: url('img/vr/header.png');
+	background-size: 100%;
+}
+section header.sc .imgHeader{
+	background: url('img/sc/header.jpg') no-repeat center;
+	background-size: 50%;
+	right: inherit;
+	left: 0;
+}
+.bg-verdeC{ background-color: #6dad3a; }
+.bg-orange{ background-color: #dea540; }
+.bg-celesteC{ background-color: #f2fdf4; }
+.bg-blanco{ background-color: #ffffff; }
+.bg-verdeA{ background-color: #6dad3a; }
+
+.mtop20{ margin-top: 20px; }
+.mtop40{ margin-top: 40px; }
+.mtop50{ margin-top: 50px; }
+.mtop60{ margin-top: 60px; }
+
+/*----------------------------------------- 	PRODUCTO APP MÓVIL 	-----------------------------------------*/
+#prodApp .bg-verdeC, #prodApp .bg-orange{
+	color: #fff;
+	padding-bottom: 50px;
+}
+#prodApp .bg-verdeC h1{
+	text-align: center;
+	font-family: 'Gotham-Bold';
+	font-size: 22px;
+	margin: 55px 0;
+}
+#prodApp .bg-verdeC li{
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+#prodApp .queHacer{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#prodApp .queHacer img{
+	margin: 55px auto;
+	display: block;
+    	width: auto;
+    	height: 120px;
+}
+#prodApp .queHacer{
+	text-align: center;
+}
+#prodApp .queHacer p{
+	font-family: 'Gotham-Book';
+	font-size: 18px;
+}
+
+#prodApp .queHacer > div > div > div > div:first-of-type > p{
+	color: #80d56a;
+}
+#prodApp .queHacer > div > div > div > div:nth-of-type(2) > p{
+	/*text-align: left;*/
+	color: #656565;
+}
+#prodApp .queHacer > div > div > div > div:nth-of-type(3) > p{
+	color: #84aadd;
+}
+#prodApp .queHacer > div > div > div > div:nth-of-type(4) > p{
+	color: #d54a39;
+}
+
+#prodApp .bg-verdeA{
+	padding: 115px 0;
+	color: #fff;
+}
+#prodApp .bg-verdeA h1{
+	text-align: center;
+	font-size: 32px;
+	font-family: 'Gotham-Light';
+	margin-bottom: 100px;
+}
+#prodApp .bg-verdeA .texto{
+	padding-bottom: 100px;
+}
+#prodApp .bg-verdeA .texto ul li{
+	font-family: 'Gotham-Book';
+	font-size: 18px;
+}
+
+
+#prodApp .bg-celesteC{
+	padding: 120px 0;
+}
+#prodApp .bg-celesteC .verde{
+	color: #6ebe5a !important;
+}
+#prodApp .bg-celesteC h1.verde{
+	font-family: 'Gotham-Light';
+	font-size: 32px;
+	padding-top: 40px;
+	margin-bottom: 40px;
+}
+#prodApp .bg-celesteC h2.gris{
+	font-family: 'Gotham-Black';
+	font-size: 20px;
+	color: #838383;
+}
+#prodApp .bg-celesteC ul{
+	padding: 0;
+	margin-top: 60px;
+}
+#prodApp .bg-celesteC ul li{
+	color: #818181;
+	font-family: 'Gotham-Book';
+	font-size: 18px;
+	margin-bottom: 35px;
+}
+
+
+#prodApp .analytics{
+	color: #818181;
+	padding-bottom: 180px;
+	text-align: justify;
+}
+#prodApp .analytics h1, #prodApp .analytics h2{
+	text-align: left;
+}
+#prodApp .analytics h1{
+	font-family: 'Gotham-Light';
+	font-size: 32px;
+	margin-top: 80px;
+	color: #6ebe5a;
+}
+#prodApp .analytics h2{
+	font-family: 'Gotham-Black';
+	font-size: 18px;
+	margin-top: 65px;
+	margin-bottom: 70px;
+}
+#prodApp .analytics p{
+	font-family: 'Gotham-Light';
+}
+#prodApp .analytics ul{
+	padding: 0 20px;
+}
+#prodApp .analytics ul li{
+	font-size: 18px;
+	font-family: 'Gotham-Book';
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+#prodApp .analytics img{
+	width: 100%;
+	height: auto;
+	margin-top: 250px;
+}
+
+/*-----------------------------------------------	 Section VR	 -----------------------------------------------*/
+section header div:nth-child(2){
+	padding-right: 90px;
+}
+
+section header.vr h1, section header.vr h2{
+	margin-bottom: 30px;
+}
+#prodVR #bajar{
+	bottom: 40px;
+}
+#prodVR .datosVR{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 380px;
+	text-align: center;
+	display: table;
+}
+#prodVR .datosVR .texto{
+	display: table-cell;
+	vertical-align: middle;
+	width: 50%;
+	font-family: 'Gotham-LightItalic';
+	font-size: 16px;
+	padding: 0 40px;
+	color: #838383;
+}
+#prodVR .datosVR .texto h1{
+	font-family: 'Gotham-Light';
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+#prodVR .datosVR ul{
+	padding: 0;
+}
+#prodVR .datosVR ul li{
+	text-align: justify;
+	margin-bottom: 40px;
+}
+
+
+/*-----------------------------------------------	 Section SU	 -----------------------------------------------*/
+section header.su p{
+	text-align: justify;
+}
+
+#prodSu article{
+	padding: 95px 0;
+	color: #eb9745;
+}
+#prodSu article h1{
+	text-align: center;
+	margin-bottom: 140px;
+	font-size: 28px;
+}
+#prodSu article ul li, #prodSu article h1{
+	font-family: 'Gotham-Light';
+}
+#prodSu article ul{
+	padding: 0 80px 0 0;
+}
+
+#prodSu article ul li{
+	font-size: 16px;
+	height: 200px;
+}
+
+
+
+
+/*-----------------------------------------------	 Section SC -----------------------------------------------*/
+
+#prodSc .beneficios .img{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: table;
+	height: 760px;
+}
+#prodSc .beneficios .img h1{
+	font-size: 36px;
+	font-family: 'Gotham-Light';
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+}
+
+#prodSc .beneficios ul{
+	padding: 230px 30px;
+}
+
+#prodSc .beneficios ul li{
+	font-size: 18px;
+	font-family: 'Gotham-Book';
+	color: #6575b8;
+	margin-bottom: 70px;
+}
+#prodSc .beneficios ul li:last-of-type{
+	margin-bottom: 0;
+}
+
+#prodSc .cursos{
+	padding: 100px 0 0 0;
+	color: #6575b8;
+	background: url('img/sc/cursos.jpg') no-repeat center;
+	background-size: cover;
+}
+#prodSc .cursos h1{
+	font-size: 36px;
+	font-family: 'Gotham-Light';
+	margin-bottom: 170px;
+	text-align: center;
+}
+
+#prodSc .cursos ul{
+	padding: 0;
+}
+#prodSc .cursos ul li{
+	font-family: 'Gotham-Bold';
+	font-size: 18px;
+	margin-bottom: 180px;
+}
+
+
+
+/*------------------------------------------------ 		Empresa 	------------------------------------------------*/
+#empresa header{
+	position: relative;
+	height: 650px;
+	background: url('img/empresa/header.jpg') no-repeat top;
+	background-size: cover;
+	width: 100%;
+}
+#empresa .container{
+	position: absolute;
+	height: 100%;
+}
+
+#empresa #comoHacemos{
+	background: url('img/empresa/comoHacemos.jpg');
+	background-size: cover;
+	height: 600px;
+	color: #fff;
+}
+#empresa .alto{
+	position: absolute;
+	width: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.pull-right{
+	right: 0;
+}
+
+#empresa .equipo{
+	height: auto;
+	padding: 50px 0 100px 0;
+}
+#empresa .equipo .container{
+	position: relative;
+}
+
+#empresa .equipo h1{
+	font-family: 'Gotham-Black';
+	font-size: 32px;
+	text-align: center;
+	margin: 0 0 75px 0;
+}
+
+#empresa .equipo .texto{
+	color: #838383;
+}
+#empresa .equipo .img{
+	width: 195px;
+	height: 195px;
+	border-radius: 100%;
+	display: block;
+	margin: 0 auto 40px auto;
+}
+
+#empresa .equipo .texto h1{
+	font-size: 26px;
+	font-family: 'Gotham-Bold';
+	color: #838383;
+	margin: 0;
+}
+#empresa .equipo .texto h2{
+	font-size: 20px;
+	font-family: 'Gotham-Light';
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+#empresa .equipo .texto p{
+	font-size: 16px;
+	font-family: 'Gotham-LightItalic';
+	margin-bottom: 0;
+}
+
+
+
+
+/*------------------------------------------------ 		Empresa 	------------------------------------------------*/
+
+
+#contacto .form-control{
+	border: 1px solid #e8e8e8;
+	border-radius: 3px;
+}
+#contacto header div:first-of-type{
+	padding-right: 0;
+}
+
+#contacto label{
+	color: #838383;
+	margin-top: 5px;
+	margin-bottom: 8px;
+}
+
+#contacto .btn{
+	margin-top: 40px;
+	width: 100%;
+	height: 48px;
+	background-color: #2fb315;
+	border-radius: 3px;
+	border: none;
+	border-color: transparent;
+}
+
+
+/*------------------------------------------------ 		Contacto 	------------------------------------------------*/
+#blog{
+	margin-top: 170px;
+	padding-bottom: 60px;
+}
+
+#blog .post{
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+#blog .post header{
+	padding: 0;
+}
+#blog .post header div:first-of-type{
+	padding: 0;
+}
+#blog .post .img{
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+#blog .post header{
+	margin-bottom: 20px;
+}
+#blog .post header p{
+	font-size: 13px;
+	margin: 0;
+	font-family: 'Gotham-Book';
+	color: #6dad3a;
+}
+#blog .post header p.fecha{
+	color: #2d2d2d;
+	font-family: 'Gotham-Light';
+}
+#blog .post .img img{
+	width: 36px;
+	height: 36px;
+}
+#blog h1{
+	font-size: 22px;
+	font-family: 'Gotham-Bold';
+	margin-top: 20px;
+	color: rgba(0,0,0,.8);
+}
+#blog h4{
+	font-size: 24px;
+	color: rgba(0,0,0,.44);
+	margin: 0;
+}
+#blog img{
+	width: 100%;
+	height: auto;
+}
+#blog p{
+	margin-top: 8px;
+	font-size: 14px;
+}
+#blog a{
+	color: inherit;
+	text-decoration: none;
+}
+#blog a:hover{
+	color: inherit !important;
+}
+#blog a.read-more{
+	color: #fff;
+	font-family: 'Gotham-Light';
+	font-size: 12px;
+}
+#blog a.read-more:hover{
+	color: #fff !important;
+	font-weight: bold;
+}
+
+.post{margin-bottom: 50px;}
+.post h1{ min-height: 75px; }
+
+
+
+
+
+
+#blog.single img{
+	width: 100%;
+	height: auto;
+}
+#blog.single p:first-child{
+	margin-top: 12px;
+}
+#blog.single p{
+	font-size: 16px;
+	margin-top: 29px;
+}
+#blog.single h1{
+	font-size: 25px;
+}
+#blog.single .contenido{
+	position: relative;
+}
+#blog.single .contenido img.imgCont{
+	margin: 43px auto;
+	width: inherit;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	position: relative;
+}
+
+/*-----------------------------------------------	 Footer	 -----------------------------------------------*/
+footer{
+	width: 100%;
+	height: 200px;
+	background-color: #2b2b2b;
+}
+
+footer .col-sm-4{
+	display: table;
+	height: 160px;
+	margin-top: 20px;
+}
+
+
+footer .col-sm-4 .centraVertical{
+	display: table-cell;
+	vertical-align: middle;
+	border-right: 1px solid #454545;
+}
+footer .col-sm-4 .centraVertical:first-child img{
+	margin-bottom: 25px;
+}
+
+
+footer p, footer p a, footer p a:hover{
+	font-family: 'Gotham-Book';
+	color: #787878;
+}
+
+footer h2{
+	font-family: 'Gotham-Book';
+	font-size: 18px;
+	color: #a6a3a8;
+	margin-top: -20px;
+}
+
+footer img{
+	margin: 20px 15px 0;
+}
+
+ /* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.navbar-brand img{
+		height: 40px;
+	}
+	.navbar-nav>li>a{
+   		padding-top: 10px;
+    		padding-bottom: 10px;
+	}
+	.sectionHome h1{
+		font-size: 24px;
+	}
+	.sectionHome h1 strong{
+		font-size: 32px !important;
+	}
+
+	.sectionHome{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.sectionHome .frase{
+		padding-right: 15px;
+		padding-left: 15px;
+		width: 100%;
+	}
+
+	.sectionHome.vr h1 strong.black{
+		font-size: 50px;
+	}
+
+	.sectionHome.vr .frase{
+		left: 0%;
+	  	top: 50%;
+	  	transform: translate(0%,-50%);
+	}
+
+	.sectionHome.uni .frase h1{
+		font-size: 26px;
+	}
+
+	section header.app{
+		padding-bottom: 250px;
+	}
+	section header.app .imgMano{
+		width: 100%;
+	}
+	section header h1 {
+    		margin: 20px 0 15px 0;
+	}
+
+	#prodVR .datosVR{
+		width: 100%;
+	}
+	#prodApp .queHacer > div > div > div > div:nth-of-type(2) > p{
+		text-align: center;
+	}
+	#prodApp .bg-verdeA .texto{
+		padding-bottom: 10px;
+	}
+
+#empresa .alto {
+    position: relative;
+    width: 100%;
+    top: 0;
+    transform: none;
+}
+section header div:first-of-type{
+	padding-right: 0;
+}
+
+.menu-menu-productos-container{
+	display: none;
+}
+#prodApp .analytics img{
+	margin-top: 30px;
+}
+
+.sectionHome.app{
+	background: #5a9030 url('img/home/app.png') no-repeat bottom center;
+	background-size: 40%;
+}
+
+
+
+
+
+	footer{
+		height: auto;
+		text-align: center;
+	}
+	footer .col-sm-4{
+		display: block;
+		width: 100%;
+		margin-bottom: 80px;
+	}
+	footer .col-sm-4 .centraVertical{
+		border-right: none;
+		border-bottom: 1px solid #454545;
+		display: block;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	footer img{
+		margin: 20px 5px 0;
+	}
+
+}
+
+#contacto p {color:#838383 !important; text-align: justify;}
+#contacto h1 {color:#838383 !important;}
+#map div div {margin-top:0px }
+#map { height: 270px; margin-bottom: 20px; padding: 0; margin-top: 30px; }
